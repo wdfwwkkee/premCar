@@ -144,6 +144,7 @@ ol {
 .about-pagination {
     display: flex;
     gap: 10px;
+    margin-bottom: 80px;
 }
 
 .about-pagination-block {
@@ -381,4 +382,155 @@ button {
     width: 270px;
     height: 50px;
     outline-color: #E5E5E5;
+}
+
+::placeholder {
+    padding: 17px 0px 15px 15px;
+}
+
+.most-popular {
+    margin-bottom: 80px;
+}
+
+.most-popular-card-list {
+    display: flex;
+    gap: 20px;
+}
+
+
+.most-popular-title {
+    margin-bottom: 27px;
+    font-size: 30px;
+}
+
+.most-popular-card-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.most-popular-card-category {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+}
+
+.most-popular-card-item-img {
+    margin-bottom: 20px;
+}
+
+.most-popular-card-item-img img {
+    border-radius: 5px;
+}
+
+.most-popular-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+
+.newsletter {
+    background: #171717;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 50px;
+}
+
+.newsletter-social-logo {
+    margin-bottom: 30px;
+}
+
+.newsletter-social-desc {
+    width: 270px;
+    margin-bottom: 64px;
+    color: #CECECE;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.newsletter-social-links-title {
+    margin-bottom: 23px;
+}
+
+.newsletter-social-list-link {
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter-recent-title {
+    margin-bottom: 28px;
+}
+
+.newsletter-recent-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.newsletter-recent-card-item {
+    display: flex;
+    gap: 20px;
+}
+
+.newsletter-recent-card-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.newsletter-recent-card-item-text-title {
+    width: 178px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.newsletter-recent-card-item-text-date {
+    color: #CECECE;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.newsletter-subscribe-title {
+    margin-bottom: 38px;
+}
+
+.newsletter-subscribe-input input{
+    width: 270px;
+    height: 50px;
+    background: #373737;
+    border: none;
+    outline-color: #373737;
+    border-color: #373737;
+    border-radius: 3px;
+}
+
+.newsletter-subscribe-input input:first-child {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 0px;
+}
+
+
+
+.footer_nav ol {
+    display: flex;
+    gap: 20px;
 }

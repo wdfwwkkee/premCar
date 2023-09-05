@@ -9,13 +9,14 @@ body {
 }
 
 a {
-    color: #FFF;
+    color: #171717;
     text-decoration: none;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    transition: all .7s;
+}
+
+a:hover {
+    color: rgb(104, 104, 238);
+    transition: all .5s;
 }
 
 .container {
@@ -40,7 +41,6 @@ a {
     display: flex;
     gap: 20px;
 }
-
 ul,
 ol {
     list-style: none;
@@ -55,7 +55,7 @@ ol {
 
 .news-card-list {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 28px;
 }
@@ -81,7 +81,19 @@ ol {
     width: 350px;
     grid-column: 3 span;
     grid-row: 4 span;
+    color: #FFF;
 }
+
+.news-card-item a{
+    color: #FFF;
+    transition: all .7s;
+}
+
+.news-card-item a:hover{
+    color: rgb(104, 104, 238);
+    transition: all .5s;
+}
+
 
 #small-card-news {
     height: 250px;
@@ -156,6 +168,13 @@ ol {
     border-radius: 3px;
     border: 1px solid #E5E5E5;
     cursor: pointer;
+    transition: all .5s;
+}
+
+.about-pagination-block:hover {
+    background-color: #000;
+    color: #FFF;
+    transition: all .5s;
 }
 
 .about-pagination-block a {
@@ -244,12 +263,19 @@ ol {
 }
 
 .about-us-widget {
+    width: 228px;
     margin-bottom: 60px;
 }
 
 
 .about-us-widget-img {
     margin-bottom: 20px;
+    
+}
+.about-us-widget-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .about-us-widget-title {
@@ -277,6 +303,12 @@ button {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    transition: all .7s;
+}
+
+button:hover {
+    color: #4A90E2;
+    transition: all .7s;
 }
 
 
@@ -332,8 +364,17 @@ button {
     margin-bottom: 10px;
 }
 
+.insta-img-item{
+    transition: transform 1s ease-in-out;
+}
+
+
+.insta-img-item:hover {
+    transform: scale(1.1);
+}
 
 .button-content {
+    color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,6 +401,10 @@ button {
     border-radius: 3px;
     background: #EBEBEB;
     padding: 7px 17px;
+}
+.about-us-tags-list-tags a:hover {
+    transition: all .7s;
+    color: #4A90E2;
 }
 
 .about-us-newsletter-title {
@@ -464,6 +509,15 @@ button {
     gap: 15px;
 }
 
+.newsletter-social-item-link {
+    transition: transform 1s ease-in-out;
+}
+
+.newsletter-social-item-link:hover {
+    transform: scale(1.1);
+}
+
+
 .newsletter-recent-title {
     margin-bottom: 28px;
 }
@@ -487,10 +541,16 @@ button {
 
 .newsletter-recent-card-item-text-title {
     width: 178px;
-    color: #FFF;
     font-size: 15px;
     font-weight: 700;
     line-height: 26px;
+}
+
+.newsletter-recent-card-item-text-title a {
+    color:#FFF;
+}
+.newsletter-recent-card-item-text-title a:hover {
+    color:#4A90E2;
 }
 
 .newsletter-recent-card-item-text-date {
@@ -528,9 +588,22 @@ button {
     padding: 39px 0px;
 }
 
+.footer-container a:hover {
+    color: #4A90E2;
+}
+
+.footer-rights a {
+    color: #FFF;
+}
 
 
 .footer_nav ol {
     display: flex;
     gap: 20px;
+    color: #FFF;
 }
+
+.footer_nav li a{
+    color: #FFF;
+}
+

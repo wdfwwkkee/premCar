@@ -41,6 +41,15 @@ a:hover {
     display: flex;
     gap: 20px;
 }
+
+.header_nav a {
+    color: #FFF;
+}
+
+.header_nav a:hover {
+    color: #4A90E2;
+}
+
 ul,
 ol {
     list-style: none;
@@ -84,12 +93,12 @@ ol {
     color: #FFF;
 }
 
-.news-card-item a{
+.news-card-item a {
     color: #FFF;
     transition: all .7s;
 }
 
-.news-card-item a:hover{
+.news-card-item a:hover {
     color: rgb(104, 104, 238);
     transition: all .5s;
 }
@@ -270,9 +279,10 @@ ol {
 
 .about-us-widget-img {
     margin-bottom: 20px;
-    
+
 }
-.about-us-widget-img img{
+
+.about-us-widget-img img {
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
@@ -364,7 +374,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.insta-img-item{
+.insta-img-item {
     transition: transform 1s ease-in-out;
 }
 
@@ -402,6 +412,7 @@ button:hover {
     background: #EBEBEB;
     padding: 7px 17px;
 }
+
 .about-us-tags-list-tags a:hover {
     transition: all .7s;
     color: #4A90E2;
@@ -440,6 +451,7 @@ button:hover {
 .most-popular-card-list {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -547,10 +559,11 @@ button:hover {
 }
 
 .newsletter-recent-card-item-text-title a {
-    color:#FFF;
+    color: #FFF;
 }
+
 .newsletter-recent-card-item-text-title a:hover {
-    color:#4A90E2;
+    color: #4A90E2;
 }
 
 .newsletter-recent-card-item-text-date {
@@ -564,7 +577,7 @@ button:hover {
     margin-bottom: 38px;
 }
 
-.newsletter-subscribe-input input{
+.newsletter-subscribe-input input {
     width: 270px;
     height: 50px;
     background: #373737;
@@ -603,7 +616,130 @@ button:hover {
     color: #FFF;
 }
 
-.footer_nav li a{
+.footer_nav li a {
     color: #FFF;
 }
 
+
+@media (max-width:1170px) {
+    .about-container {
+        justify-items: center;
+    }
+
+    .about-card-list {
+        grid-column: 1 / 13;
+    }
+
+    .about-container-aside {
+        grid-column: 12 span;
+    }
+
+    .about-us-widget {
+        grid-column: 4 span;
+        grid-row: 1 / 2;
+        width: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-widget-desc {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .about-container-aside {
+        display: grid;
+        justify-content: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .about-us-popular_post {
+        grid-column: 4 span;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-popular_post-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .about-us-popular_post-card-title {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    .about-us-popular_post-item {
+        width: 370px;
+    }
+
+    .about-us-popular_post-card-img {
+        margin-bottom: 0px;
+    }
+
+    .about-us-newsletter {
+        grid-column: 4 span;
+    }
+
+    .about-us-instagram {
+        grid-column: 2 span;
+    }
+
+    .about-us-tags {
+        grid-column: 2 span;
+    }
+
+    .about-us-instagram-title {
+        text-align: center;
+    }
+
+    .about-us-instagram-photo-list {
+        width: 500px;
+    }
+
+    .about-us-tags-title {
+        text-align: center;
+    }
+
+    .about-us-tags {
+        width: 500px;
+    }
+
+    button {
+        width: 500px;
+    }
+
+
+    .about-us-newsletter {
+        margin-bottom: 20px;
+        text-align: center;
+        grid-column: 4 span;
+    }
+
+    .about-us-newsletter-input {
+        text-align: left;
+    }
+
+    .about-us-newsletter-input input {
+        width: 500px;
+    }
+
+    .about-pagination {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter-subscribe button{
+        width: 270px;
+        padding-right: 10px;
+    }
+}
